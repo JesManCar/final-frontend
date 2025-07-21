@@ -17,7 +17,7 @@ export default function RegisterForm() {
     e.preventDefault();
     try {
       const res = await API.post('/register', { email, password, username, country, city, address, postal });
-      login(res.data.token);
+      login(res.data.token, res.data.user);
     } catch {
       alert('Error al registrar');
     }
