@@ -2,7 +2,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const API = axios.create({
-  baseURL: 'https://final-project-backend.onrender.com',
+  baseURL: 'https://final-backend-fzec.onrender.com',
   withCredentials: true, 
 });
 
