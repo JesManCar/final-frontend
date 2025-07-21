@@ -1,0 +1,55 @@
+@import "../styles/colors.css";
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 50px auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+select {
+    width: 107%;
+}
+
+button[type="submit"] {
+    background-color: var(--aquamarine);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--dark-aquamarine);
+}
+
+input[type="date"]:read-only,
+button[disabled],
+button[disabled]:hover {
+    background-color: var(--light-gray);
+    cursor: not-allowed;
+}

@@ -1,0 +1,20 @@
+.fc-event {
+    cursor: pointer;
+}
+.fc-toolbar-title {
+    text-transform: uppercase;
+}
+.fc-col-header {
+    text-transform: uppercase;
+}
+
+.fc {
+    overflow: hidden !important;
+    height: 100%;
+    scrollbar-width: 0px;
+    scrollbar-color: red;
+}
+
+.fc::-webkit-scrollbar {
+  display: none !important;
+}
