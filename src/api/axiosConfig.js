@@ -2,19 +2,20 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 const API = axios.create({
-  baseURL: 'http://localhost:3001/',
+  /*baseURL: 'http://localhost:3001/',*/
+  baseURL: 'https://final-project-backend.onrender.com/',
   withCredentials: true, // permite envío de cookies
 
 });
 
-const API_FormType = axios.create({
+/*const API_FormType = axios.create({
   baseURL: 'http://localhost:3001/',
   headers: {
     'Content-Type': 'multipart/form-data', // para enviar archivos
     withCredentials: true, // permite envío de cookies
   }
 
-});
+});*/
 
 API.interceptors.request.use(config => {
   const token = Cookies.get('token');
@@ -24,4 +25,4 @@ API.interceptors.request.use(config => {
   return config;
 });
 
-export { API, API_FormType };
+export { API, /*API_FormType */ };
