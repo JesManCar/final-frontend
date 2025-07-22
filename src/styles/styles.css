@@ -86,6 +86,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-decoration: none;
 }
 
 /* Cada fila del grid llena el espacio disponible verticalmente */
@@ -110,4 +111,32 @@ header h1 {
   cursor: pointer;
   background-color: #555;
   color: var(--aquamarine);
+}
+
+.pet-card:hover {
+  cursor: pointer;
+  background-color: #555;
+  color: var(--aquamarine);
+}
+
+.edit-card, .delete-card {
+  background-color: var(--aquamarine);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.pet-info {
+  background-color: var(--platinum);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }

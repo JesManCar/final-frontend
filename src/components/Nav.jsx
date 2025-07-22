@@ -8,10 +8,10 @@ export default function Nav() {
 
   return (
     <div className="container-menu">
-        
+        <p>{user?.name}</p>
       <div className="cont-menu">
         <nav>
-          <a href="#">{user?.name}</a>
+          <p href="#">{user?.name}</p>
           <a href="/">Dashboard</a>
           <a href="/add-pet">Añadir mascota</a>
           <a href="/calendar">Calendario</a>

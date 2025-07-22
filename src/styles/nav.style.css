@@ -17,7 +17,7 @@
 .cont-menu nav{
     transform: translateY(15%);
 }
-.cont-menu nav a{
+.cont-menu nav a, .cont-menu nav p {
   display: block;
   text-decoration: none;
   padding: 20px;
@@ -25,7 +25,7 @@
   border-left: 5px solid transparent;
   transition: all 400ms ease;
 }
-.cont-menu nav a:hover {
+.cont-menu nav a:hover, .cont-menu nav p:hover {
   border-left: 5px solid var(--night);
   background: var(--dark-aquamarine);
 }
