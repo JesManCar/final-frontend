@@ -16,11 +16,13 @@ export default function CalendarPage() {
   return (
     <>
         <Nav />
-        <div style={{ height: '80%', width: '60%', position: 'relative', left: '250px', top: '50px' }}>
+        <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '80vh', width: '80%', position: 'relative', left: '200px'}}>
+        <div style={{ height: '80%'}}>
             <Calendar date={selectedDate} handleDateChange={handleDateChange} />
         </div>
-        <div style={{ width: "15%", left: "77%", top:"-750px", position: "relative" }}>
+        <div style={{ width: "15%"}}>
             <CalendarForm date={selectedDate} />
+        </div>
         </div>
     </>
   );

@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(Cookies.get('user') ? JSON.parse(Cookies.get('user')) : null);
   const [token, setToken] = useState(Cookies.get('token') || null);
   const isAuthenticated = !!token;
-  //const isAuthenticated = false;
+  //const isAuthenticated = true;
 
   const login = (newToken, userData) => {
     Cookies.set('token', newToken, { expires: 1 }); // 1 día
