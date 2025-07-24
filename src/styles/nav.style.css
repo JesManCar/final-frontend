@@ -25,7 +25,7 @@
   border-left: 5px solid transparent;
   transition: all 400ms ease;
 }
-.cont-menu nav a:hover, .cont-menu nav p:hover {
+.cont-menu nav a:hover {
   border-left: 5px solid var(--night);
   background: var(--dark-aquamarine);
 }

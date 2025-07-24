@@ -1,5 +1,15 @@
 import { useContext } from 'react';
 import { AuthContext } from '../context/authContext';
+import { MdOutlineDashboard } from "react-icons/md";
+import { MdOutlinePets } from "react-icons/md";
+import { MdOutlineCalendarMonth } from "react-icons/md";
+import { MdOutlineLogout } from "react-icons/md";
+import { MdOutlinePersonOutline } from "react-icons/md";
+
+
+
+
+
 
 import "../styles/nav.style.css";
 
@@ -8,14 +18,13 @@ export default function Nav() {
 
   return (
     <div className="container-menu">
-        <p>{user?.name}</p>
       <div className="cont-menu">
         <nav>
-          <p href="#">{user?.name}</p>
-          <a href="/">Dashboard</a>
-          <a href="/add-pet">Añadir mascota</a>
-          <a href="/calendar">Calendario</a>
-          <a href="#" onClick={logout}>Cerrar sesión</a>
+          <p><MdOutlinePersonOutline />{user?.name}</p>
+          <a href="/"><MdOutlineDashboard />Dashboard</a>
+          <a href="/add-pet"><MdOutlinePets />Añadir mascota</a>
+          <a href="/calendar"><MdOutlineCalendarMonth />Calendario</a>
+          <a href="#" onClick={logout}><MdOutlineLogout />Cerrar sesión</a>
         </nav>
       </div>
     </div>
