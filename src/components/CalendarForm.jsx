@@ -78,7 +78,7 @@ export default function CalendarForm({date}){
     }
 
     return (
-        <form readOnly={readOnly} className="calendar-form" onSubmit={handleSubmit} style={{ flex: 2 ,width: '20%' }}>
+        <form readOnly={readOnly} className="calendar-form" onSubmit={handleSubmit}>
             <h2>Añadir Eventos</h2>
             <input readOnly={readOnly} type="date" value={dateStr} onClick={(e) => e.preventDefault()} />
             <select readOnly={readOnly} disabled={readOnly} onChange={(e) => setSelectedPet(e.target.value)}>
